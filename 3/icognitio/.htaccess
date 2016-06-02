@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+
+	RewriteEngine On
+	RewriteRule ^(style|styles|index|default|stylesheet).(css|css2|css3|stylesheet)?(.*?)$ index.php?$1
+	RewriteRule ^(style|styles|index|default|stylesheet).(css|css2|css3|stylesheet)$ index.php
+	RewriteRule ^$ index.php
+
+</IfModule>
